@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>JS function</title>
+</head>
+
+<body>
+    <!-- slide up -->
+    <button id="clickMe">Run away from zombie!</button>
+
+        <img id="hello"src="zombie.jpg">
+    
+    <!-- click to trigger -->
+    <button id="clicktotrigger">Zombie is out of sight!</button>
+
+    <!-- value -->
+
+    <input type="text" value="Choose a weapon for your next encounter!">
+    <div>
+        <button class="val">Sword</button>
+        <button class="val">Axe</button>
+        <button class="val">Raygun</button>
+    </div>
+
+    <script>
+        alert("click on the buttons on order to progress through the story :) ");
+        alert("AHHH! A ZOMBIE!!!");
+
+        //click to trigger
+        $("#clicktotrigger").click(function () {
+            alert("That was close, wasnt it?");
+        });
+
+        // slide up function
+
+        $("#clickMe").click(function () {
+            $("#hello").slideUp("slow", function () {
+                // Animation complete.
+            });
+        });
+
+        //.val
+        $(".val").click(function () {
+            var text = $(this).text();
+            $("input").val(text);
+        });
+    </script>
+
+</body>
+
+</html>

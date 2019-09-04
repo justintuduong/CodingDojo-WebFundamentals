@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <title>Today's Weather</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="search">
+            <form> <!--action="process.php" method="post" only needed for servers-->
+                <label> <!--used to make accessibility of form easier-->
+                    City: <input type="text" name="findweather">
+                </label>
+                <label>
+                    <input type="submit" value="weather" name="weather">
+                </label>
+            </form>
+        </div>
+        <div class="location"></div>
+        <div class="temp"></div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("form").submit(function () {
+            var location = $("input[name = findweather]").val();
+            $.get("http://api.openweathermap.org/data/2.5/weather?q=" + location + ",us&&appid=340e2800e6e81224e0f99f1c13513e74", function (res) {
+                $(".location").html("<h1>" + location + "</h1>");
+                $(".temp").html("<p>Temperature: " + Math.floor((((res.main.temp - 273) * (
+                    9 / 5)) + 32)) + " degrees fahrenheit" + "</p>");
+            }, "json");
+            return false;
+        });
+    });
+
+    // appid={340e2800e6e81224e0f99f1c13513e74}
+
+    
+</script>
+
+</body>
+
+</html>

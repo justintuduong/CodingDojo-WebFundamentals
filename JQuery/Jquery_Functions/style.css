@@ -1,0 +1,25 @@
+*{
+    margin:auto;
+    text-align:center;
+    padding:5px;
+}
+
+body {
+    background-color: black;
+}
+button {
+    display:block;
+}
+
+img {
+    width:20%;
+    display: block;
+}
+input {
+    width:50%;
+    display: block;
+}
+
+.val {
+    display:inline-block;
+}

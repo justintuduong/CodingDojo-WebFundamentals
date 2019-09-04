@@ -1,0 +1,54 @@
+* {
+    /* border: dotted black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------media queries------- */
+
+
+@media only screen and (max-width: 480px) {
+
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .sm-4 {
+        width: 100%;
+    }
+
+    .sm-0 {
+        display: none; /* takes 0 columns */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 828px) {
+
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .med-2 {
+        width:50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .lg-1 {
+        width:24%;
+    }
+}

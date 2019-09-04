@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>James P. Sullivan</title>
+        <meta charset="UTF-8" name="description" content="This is a fake blog for Sully.">
+    </head>
+    <body>
+        <h1 id="top">James P. Sullivan</h1>
+        <img src="Sully.jpeg" alt= "a photo of James P. Sullivan">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero magni sed quod corporis optio molestias unde veritatis hic maiores error labore eos vero sapiente quibusdam, laborum soluta? Eos, ipsum.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero magni sed quod corporis optio molestias unde veritatis hic maiores error labore eos vero sapiente quibusdam, laborum soluta? Eos, ipsum.</p>
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Monthly Scare Score</th>
+                        <th>MVP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>2001</td>
+                        <td>500</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>500</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>500</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="team">
+            <ul>
+                <li>2000 - 2005 Scare Tactics</li>
+                <li>2005-2006 Scare-A-Holics</li>
+                <li>2006-2009 Halloween-Erryday</li>
+            </ul>
+        </div>
+        <form action="process.php" method="post">
+            <h2>Please Take a Short Survey</h2>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="scareyou@scare.com">
+            <br>
+
+            <input type="radio" id="yes-email">
+            <label for="yes-email">Yes, send me lot's of emails</label>
+
+            <input type="radio" id="no-email">
+            <label for="no-email">No, please do not send me any emails</label>
+
+            <p>How did you hear about us?</p>
+            <input type="checkbox" id="facebook">
+            <label for="facebook" id="facebook" name="source" value="facebook">Facebook</label>
+
+            <input type="checkbox" id="scarenews">
+            <label for="scarenews" id="scarenews" name="source" value="scarenews">Scary News Weekly</label>
+            <br>
+
+            <input type="submit" value="submit">
+        </form>
+        <p><a href="#top">Top</a></p>
+    </body>
+</html>
